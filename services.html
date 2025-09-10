@@ -1,68 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Services | Overfelt Construction, Inc.</title>
-  <meta name="description" content="Interior renovations, additions, impact windows/doors, and light commercial improvements in Broward & Palm Beach Counties.">
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; color:#111 }
-    header, footer { background:#333; color:#fff; padding:1rem; }
-    nav a { color:#fff; margin:0 .8rem; text-decoration:none; }
-    .container { max-width:1100px; margin:0 auto; padding:2rem; }
-    h2 { margin-top:0 }
-    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
-    .card { background:#f6f6f6; padding:1.25rem; border-radius:8px; }
-    .cta { display:inline-block; margin-top:1rem; background:#007BFF; color:#fff; padding:.8rem 1.2rem; border-radius:6px; text-decoration:none; }
-    @media (max-width:1000px){ .grid{ grid-template-columns:1fr 1fr; } }
-    @media (max-width:700px){ .grid{ grid-template-columns:1fr; } }
-  </style>
+  <meta name="description" content="Interior renovations, additions, impact windows/doors, light commercial improvements.">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Overfelt Construction, Inc.</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="header-wrap">
+    <div class="brand"><div class="brand-badge"></div><h1>Overfelt Construction, Inc.</h1></div>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
 
-  <main class="container">
-    <h2>What We Do</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Interior Renovations</h3>
-        <p>Kitchens, bathrooms, flooring, lighting, drywall, paint—complete refresh or targeted upgrades.</p>
-      </div>
-      <div class="card">
-        <h3>Additions & Garages</h3>
-        <p>Garages, bedrooms, and space reconfiguration with permit-ready plans and inspections.</p>
-      </div>
-      <div class="card">
-        <h3>Impact Windows & Doors</h3>
-        <p>Miami-Dade approved products with clean install and closeout documentation.</p>
-      </div>
-      <div class="card">
-        <h3>Light Commercial</h3>
-        <p>Tenant improvements, office refreshes, clubhouses, and common areas—with minimal downtime.</p>
-      </div>
-      <div class="card">
-        <h3>Project Management</h3>
-        <p>Scope, schedule, budget, and trade coordination from demo to punch list.</p>
-      </div>
-      <div class="card">
-        <h3>Permitting & Closeout</h3>
-        <p>Submittals, inspections, and final sign-off handled end-to-end.</p>
-      </div>
-    </div>
-    <a class="cta" href="contact.html">Request a Free Estimate</a>
-  </main>
+<section class="section">
+  <h3>What We Do</h3>
+  <div class="cards">
+    <div class="card"><h4>Interior Renovations</h4><p>Kitchens, baths, flooring, lighting, drywall, paint—full refresh or targeted upgrades.</p></div>
+    <div class="card"><h4>Additions & Garages</h4><p>Space expansion with plans, inspections, and closeout docs handled.</p></div>
+    <div class="card"><h4>Impact Windows & Doors</h4><p>Miami-Dade approved products installed to spec with final sign-off.</p></div>
+    <div class="card"><h4>Light Commercial</h4><p>Tenant improvements, offices, clubhouses, common areas—minimal downtime.</p></div>
+    <div class="card"><h4>Project Management</h4><p>Scope, schedule, budget, and trade coordination from demo to punch.</p></div>
+    <div class="card"><h4>Permitting & Closeout</h4><p>Submittals, inspections, and final sign-off end-to-end.</p></div>
+  </div>
+  <div class="cta-row" style="margin-top:16px"><a class="btn btn-primary" href="contact.html">Request a Free Estimate</a></div>
+</section>
 
-  <footer>
-    <p>© 2025 Overfelt Construction, Inc. | Tamarac, FL</p>
-  </footer>
+<footer><p>© 2025 Overfelt Construction, Inc. | Tamarac, FL</p></footer>
 </body>
 </html>
