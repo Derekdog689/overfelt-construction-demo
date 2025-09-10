@@ -1,83 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Contact | Overfelt Construction, Inc.</title>
   <meta name="description" content="Request a free estimate. Licensed General Contractor serving Broward & Palm Beach.">
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; color:#111 }
-    header, footer { background:#333; color:#fff; padding:1rem; }
-    nav a { color:#fff; margin:0 .8rem; text-decoration:none; }
-    .container { max-width:900px; margin:0 auto; padding:2rem; }
-    h2 { margin-top:0 }
-    form { background:#f6f6f6; padding:1.25rem; border-radius:8px; }
-    label { display:block; margin:.6rem 0 .25rem; }
-    input, textarea, select { width:100%; padding:.7rem; border:1px solid #ccc; border-radius:6px; }
-    button { margin-top:1rem; background:#007BFF; color:#fff; border:0; padding:.8rem 1.2rem; border-radius:6px; cursor:pointer; }
-    .alt { margin-top:1rem; }
-    .alt a { margin-right:1rem; }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Overfelt Construction, Inc.</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="header-wrap">
+    <div class="brand"><div class="brand-badge"></div><h1>Overfelt Construction, Inc.</h1></div>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
 
-  <main class="container">
-    <h2>Request a Free Estimate</h2>
-    <form name="estimate" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-      <input type="hidden" name="form-name" value="estimate" />
-      <p style="display:none">
-        <label>Don’t fill this out if you’re human: <input name="bot-field"/></label>
-      </p>
+<section class="section">
+  <h3>Request a Free Estimate</h3>
+  <form name="estimate" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+    <input type="hidden" name="form-name" value="estimate"/>
+    <p style="display:none"><label>Don’t fill this out if you’re human: <input name="bot-field"/></label></p>
 
-      <label for="name">Name</label>
-      <input id="name" name="Name" required>
+    <label for="name">Name</label><input id="name" name="Name" required>
+    <label for="email">Email</label><input id="email" type="email" name="Email" required>
+    <label for="phone">Phone</label><input id="phone" type="tel" name="Phone" required>
+    <label for="city">City / ZIP</label><input id="city" name="CityZip">
 
-      <label for="email">Email</label>
-      <input id="email" name="Email" type="email" required>
+    <label for="type">Project Type</label>
+    <select id="type" name="Project Type">
+      <option>Interior Renovation</option><option>Bathroom/Kitchen</option>
+      <option>Addition/Garage</option><option>Impact Windows/Doors</option>
+      <option>Light Commercial</option><option>Other</option>
+    </select>
 
-      <label for="phone">Phone</label>
-      <input id="phone" name="Phone" type="tel" required>
+    <label for="details">Project Details</label><textarea id="details" rows="6" name="Details"></textarea>
 
-      <label for="city">City / ZIP</label>
-      <input id="city" name="CityZip">
+    <button type="submit">Send Request</button>
+  </form>
 
-      <label for="type">Project Type</label>
-      <select id="type" name="Project Type">
-        <option>Interior Renovation</option>
-        <option>Bathroom/Kitchen</option>
-        <option>Addition/Garage</option>
-        <option>Impact Windows/Doors</option>
-        <option>Light Commercial</option>
-        <option>Other</option>
-      </select>
+  <p class="meta" style="margin-top:12px">
+    Prefer to call or email?
+    <a href="tel:+19545551234">📞 (954) 555-1234</a> •
+    <a href="mailto:info@overfeltconstruction.com">✉ info@overfeltconstruction.com</a>
+  </p>
+</section>
 
-      <label for="details">Project Details</label>
-      <textarea id="details" name="Details" rows="6"></textarea>
-
-      <button type="submit">Send Request</button>
-    </form>
-
-    <div class="alt">
-      <p><strong>Prefer to call or email?</strong></p>
-      <p>
-        <a href="tel:+19545551234">📞 (954) 555-1234</a>
-        <a href="mailto:info@overfeltconstruction.com">✉ info@overfeltconstruction.com</a>
-      </p>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2025 Overfelt Construction, Inc. | Tamarac, FL</p>
-  </footer>
+<footer><p>© 2025 Overfelt Construction, Inc. | Tamarac, FL</p></footer>
 </body>
 </html>
