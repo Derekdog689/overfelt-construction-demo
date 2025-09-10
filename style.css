@@ -1,67 +1,75 @@
-/* Brand palette (BuildZoom-inspired): deep blue + sky blue + warm gray */
+/* Brand palette (BuildZoom-inspired blues + calm gray) */
 :root{
   --bg:#0b1b2b;          /* deep navy */
   --brand:#1e6ffd;       /* blue accent */
   --brand-2:#6fb6ff;     /* light blue */
-  --ink:#111;
+  --ink:#0d1117;         /* body text */
   --muted:#6b7280;       /* warm gray */
   --card:#f7f9fc;        /* off-white */
   --line:#e5e7eb;
+  --pill-bg:#0e213f;
+  --pill-line:#1e3563;
 }
-
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
 
 /* Header */
-header{background:var(--bg);color:#fff;text-align:center;padding:20px 16px;position:sticky;top:0;z-index:20}
-.header-wrap{max-width:1100px;margin:0 auto}
+header{background:var(--bg);color:#fff;text-align:center;padding:20px 16px;position:sticky;top:0;z-index:30}
+.header-wrap{max-width:1200px;margin:0 auto}
 .brand{display:flex;gap:12px;align-items:center;justify-content:center}
-.brand-badge{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
-.brand h1{font-size:22px;margin:0;font-weight:700;letter-spacing:.2px}
+.brand-badge{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
+.brand h1{font-size:22px;margin:0;font-weight:800;letter-spacing:.2px}
 nav{margin-top:8px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
-nav a{color:#e5f0ff;text-decoration:none;font-weight:600}
+nav a{color:#e5f0ff;text-decoration:none;font-weight:700}
 nav a:hover{color:#fff;text-decoration:underline}
 
 /* Hero */
-.hero{background:linear-gradient(135deg,var(--bg) 0%, #102742 35%, #12345a 70%);color:#fff}
-.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:56px 16px}
-@media (max-width:900px){.hero-inner{grid-template-columns:1fr}}
-.kicker{color:var(--brand-2);text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin:0 0 6px}
-.hero h2{font-size:40px;line-height:1.1;margin:0 0 12px}
-.hero p{margin:0 0 18px;color:#e7effa}
+.hero{background:linear-gradient(135deg,var(--bg) 0%, #102742 40%, #12345a 100%);color:#fff}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.2fr .9fr;gap:28px;align-items:center;padding:60px 16px}
+@media (max-width:980px){.hero-inner{grid-template-columns:1fr}}
+.kicker{color:var(--brand-2);text-transform:uppercase;letter-spacing:.14em;font-size:12px;margin:0 0 8px}
+.hero h2{font-size:42px;line-height:1.08;margin:0 0 12px}
+.hero p{margin:0 0 18px;color:#e7effa;font-size:18px}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:800}
 .btn-primary{background:var(--brand);color:#fff}
 .btn-primary:hover{filter:brightness(1.08)}
 .btn-ghost{border:1px solid #7aa7ff;color:#dbe7ff}
 .btn-ghost:hover{background:#0d2342}
 
-/* Trust bar */
+/* Image strip */
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.strip img{width:100%;height:140px;object-fit:cover;border-radius:12px;border:1px solid #0f2240}
+
+/* Trust pills */
 .trust{background:#061220;color:#c7d7f8;border-top:1px solid #0f2240;border-bottom:1px solid #0f2240}
-.trust-inner{max-width:1100px;margin:0 auto;padding:14px 16px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
-.badge{display:flex;align-items:center;gap:8px;background:#0e213f;color:#dbe7ff;padding:8px 12px;border-radius:999px;border:1px solid #1e3563;font-size:14px}
+.trust-inner{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.pill{display:flex;align-items:center;gap:8px;background:var(--pill-bg);color:#dbe7ff;padding:8px 12px;border-radius:999px;border:1px solid var(--pill-line);font-size:14px}
 
 /* Sections */
-.section{max-width:1100px;margin:0 auto;padding:40px 16px}
-h3{font-size:22px;margin:0 0 12px}
+.section{max-width:1200px;margin:0 auto;padding:40px 16px}
+h3{font-size:24px;margin:0 0 12px}
+.sub{color:var(--muted);margin:-6px 0 18px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media (max-width:980px){.cards{grid-template-columns:1fr 1fr}}
-@media (max-width:640px){.cards{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+@media (max-width:1100px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:680px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
 .card h4{margin:0 0 6px}
 .card p{margin:0;color:#374151}
 
-/* Projects grid */
-.projects{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media (max-width:900px){.projects{grid-template-columns:1fr}}
+/* Projects grid (thumbs) */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:1100px){.projects{grid-template-columns:1fr 1fr}}
+@media (max-width:680px){.projects{grid-template-columns:1fr}}
+.thumb{width:100%;height:160px;object-fit:cover;border-radius:12px;border:1px solid var(--line);margin-bottom:10px}
 .meta{color:var(--muted);font-size:14px}
 
 /* Contact form */
-form{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
 label{display:block;margin:10px 0 4px}
-input,select,textarea{width:100%;padding:10px;border:1px solid #d1d5db;border-radius:8px;font:inherit}
-button{padding:12px 16px;border:0;border-radius:10px;background:var(--brand);color:#fff;font-weight:700;cursor:pointer}
+input,select,textarea{width:100%;padding:10px;border:1px solid #d1d5db;border-radius:10px;font:inherit}
+button{padding:12px 16px;border:0;border-radius:12px;background:var(--brand);color:#fff;font-weight:800;cursor:pointer}
 button:hover{filter:brightness(1.08)}
 
 /* Footer */
