@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Privacy Policy | Overfelt Construction, Inc.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <div class="header-wrap">
+    <div class="brand"><div class="brand-badge"></div><h1>Overfelt Construction, Inc.</h1></div>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+
+<section class="section">
+  <h3>Privacy Policy</h3>
+  <p class="sub">We respect your privacy. This policy explains what we collect and how we use it.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h4>Information We Collect</h4>
+      <p>When you submit the estimate form, we collect your name, email, phone, city/ZIP, project type, and details.</p>
+    </div>
+    <div class="card">
+      <h4>How We Use It</h4>
+      <p>We use your information solely to contact you about your inquiry, provide estimates, and schedule work. We do not sell your information.</p>
+    </div>
+    <div class="card">
+      <h4>Retention & Security</h4>
+      <p>We keep inquiries for a reasonable period to follow up on quotes and projects. Data is stored securely and accessed only by authorized personnel.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:24px">Contact</h3>
+  <p class="meta">For privacy questions, contact: <a href="mailto:info@overfeltconstruction.com">info@overfeltconstruction.com</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Overfelt Construction, Inc. | Tamarac, FL • <a href="privacy.html">Privacy</a></p>
+</footer>
+</body>
+</html>
